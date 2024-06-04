@@ -135,12 +135,6 @@ font-weight: 700;
   
   align-items: center;
 }
-/* .feld-in-ctalog{
-  display: flex;
-  flex-direction: column;
-  border-bottom: 1px dashed green;
-  
-} */
 /* style cart */
 .cart{
   display: flex;
@@ -224,25 +218,6 @@ align-items: flex-end;
   
 }
 /* style extra selector */
-/* .container-section-1{
-  display: flex;
-  width: 100vw;
-  height: 90vh;
-  justify-content: center;
-  align-items: center;
-
- 
-}
-.Cart_container-1{
-  
-  justify-content: center;
-  align-items: center;
-  background-color: #F4F4F4;
-  width: 20vw;
-  height: 39vh;
-  padding: 2rem;
- */
-/* } */
 .overlay{
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
@@ -366,9 +341,6 @@ flex-direction: column;
     flex-direction: column;
     margin-bottom: 2.5rem;
   }
-  /* .details-right{
-    margin-left: 0;
-  } */
   .left-flex{
     margin-left: 0;
   }
@@ -379,28 +351,13 @@ flex-direction: column;
     height: 60vh;
     padding: 3rem;
   }
-  /* .container-section{
-    display: flex;
-    flex-direction: column;
-  } */
   .flex-section{
     display: flex;
     flex-direction: column;
   
   }
-  .container-section-1{
-    background-image: url("./Images/res.png")  ;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;
-    height: 90vh;
-  
-  
-  }
   .Credit_card_feilds{
-    /* padding: .375rem .75rem; */
     font-size: 1rem;
-    /* line-height: 1.5; */
     color: #495057;
     background-color: #fff;
     background-clip: padding-box;
@@ -415,10 +372,6 @@ flex-direction: column;
     background-color: white;
     width: 20vw;
   }
-  /* .rccs__card{
-    height: 10rem;
-  }
-   */
 
    .container-checkbox{
     font-size: 10px;

@@ -1,11 +1,5 @@
-import { useNavigate} from 'react-router-dom'
 function CartpersonalDetails(){
     const options = ['Creditcard'];
-const handelchange=(event)=>{
-if(event.target.value==="Creditcard"){
-    console.log(event.target.value)
-}
-}
 
     return(
                     <form className="container-details" method='GET' action='/Mycart/checkout' >
@@ -35,13 +29,10 @@ if(event.target.value==="Creditcard"){
 
          </select>
          </div>
-
             </div>
             <input type="submit" value="checkout" className="check-out-button"></input>
-
-
-                        </div>
-        </form>
+                        </div>      
+            </form>
 
     
     )

@@ -4,11 +4,11 @@ import Cards from 'react-credit-cards';
 import 'react-credit-cards/es/styles-compiled.css';
 function Cart_checkout(){
     let navigate=useNavigate()
-const[number,Setnumber]=useState('')
-const[name,Setname]=useState('')
+const[number,setNumber]=useState('')
+const[name,setName]=useState('')
 const[expiry,setExpiry]=useState('')
-const [cvc,SetCvc]=useState('')
-const[focus,SetFocus]=useState('')
+const [cvc,setCvc]=useState('')
+const[focus,setFocus]=useState('')
 return(
     <div className="Checkout_container">
         <div className="Cart_container">
@@ -27,8 +27,8 @@ return(
      name="number" 
      placeholder="Card Number" 
      value={number}
-     onChange={e=>Setnumber(e.target.value)}
-     onFocus={e=>SetFocus(e.target.name)}
+     onChange={e=>setNumber(e.target.value)}
+     onFocus={e=>setFocus(e.target.name)}
      className="Credit_card_feilds"
 
       />
@@ -36,8 +36,8 @@ return(
      name="name" 
      placeholder="Name" 
      value={name} 
-     onChange={e=>Setname(e.target.value)}
-     onFocus={e=>SetFocus(e.target.name)}
+     onChange={e=>setName(e.target.value)}
+     onFocus={e=>setFocus(e.target.name)}
      className="Credit_card_feilds"
       />
     <input type='tel'
@@ -45,7 +45,7 @@ return(
      placeholder="MM/YY Expiry" 
      value={expiry} 
      onChange={e=>setExpiry(e.target.value)}
-     onFocus={e=>SetFocus(e.target.name)}
+     onFocus={e=>setFocus(e.target.name)}
      className="Credit_card_feilds"
 
       />
@@ -53,8 +53,8 @@ return(
      name="cvc" 
      placeholder="CVC" 
      value={cvc} 
-     onChange={e=>SetCvc(e.target.value)}
-     onFocus={e=>SetFocus(e.target.name)}
+     onChange={e=>setCvc(e.target.value)}
+     onFocus={e=>setFocus(e.target.name)}
      className="Credit_card_feilds"
 
       />

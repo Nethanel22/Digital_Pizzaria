@@ -1,10 +1,10 @@
 import React from "react";
 import {useState,useEffect} from 'react'
-import { useNavigate, useParams } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 import axios from "axios";
 const Modal=({open, onClose, setIsOpen})=>{
     const navigate=useNavigate()
-    const [Pizza,setpizza]=useState()
+    const [Pizza,setPizza]=useState()
     const [data, setData] = useState({
         count: 1,
         extras: []
@@ -12,7 +12,7 @@ const Modal=({open, onClose, setIsOpen})=>{
     const fetchData=async ()=>{
         try{
 let res=await axios.get("https://66530479813d78e6d6d6e497.mockapi.io/products")
-setpizza(res.data)
+setPizza(res.data)
 console.log(res.data)
         }
         catch(err){
@@ -48,7 +48,6 @@ return(
     <div className="overlay">
         <div className="modalcontainer">
             <p onClick={ onClose}> x</p>
-            {/* <h2>select extra</h2> */}
         {Pizza?.filter(i => i.id ===open.selectedId).map(item=> 
         <>
             <h2 className="header-2">you chose {item.name}</h2>

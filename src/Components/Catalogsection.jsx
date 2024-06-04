@@ -1,20 +1,18 @@
 import {useState,useEffect} from "react"
 import axios from "axios"
 import Extraselector from "./ExtrasSelector"
-import { useNavigate } from "react-router-dom"
 function Catalogsection(){
-    const [Pizza,setpizza]=useState()
-    const[openmodal,setopenmodal]=useState({
+    const [Pizza,setPizza]=useState()
+    const[openmodal,setOpenModal]=useState({
         isopen:false,
         selectedId :0,
         name:"",
     })
     console.log(openmodal.selectedId)
-let navigate=useNavigate()
     const fetchData=async ()=>{
         try{
             let res=await axios.get("https://66530479813d78e6d6d6e497.mockapi.io/products")
-            setpizza(res.data)
+            setPizza(res.data)
         }
         catch(err){
             console.log(err)
@@ -49,7 +47,7 @@ let navigate=useNavigate()
                     <h3 className="itemContainer__price">
                         {item.price}
                     </h3>
-                    {item.type !== 3 && <button onClick={() => {setopenmodal({isOpen: true, selectedId: item.id})}} className="itemContainer__addToCart">+</button>}
+                    {item.type !== 3 && <button onClick={() => {setOpenModal({isOpen: true, selectedId: item.id})}} className="itemContainer__addToCart">+</button>}
                 </div>
             </div>)}
        </section>
@@ -76,7 +74,7 @@ let navigate=useNavigate()
                 </div>
             </div>)}
 </section>
-<Extraselector open={openmodal } setIsOpen={setopenmodal} onClose={()=>setopenmodal(false)}/>
+<Extraselector open={openmodal } setIsOpen={setOpenModal} onClose={()=>setOpenModal(false)}/>
         </div>
         </div>
 
