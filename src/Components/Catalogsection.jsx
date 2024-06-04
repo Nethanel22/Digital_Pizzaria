@@ -1,4 +1,3 @@
-import CatalogItem from "./CatalogItem"
 import {useState,useEffect} from "react"
 import axios from "axios"
 import Extraselector from "./ExtrasSelector"
