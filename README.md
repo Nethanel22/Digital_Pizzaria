@@ -21,15 +21,15 @@ by git clone command after this type npm start to run the project
 # How to Use the Project
 <strong>Short Explanation of the menu:</strong>
 </br>
-homepage- go the homepage of pizzaria
+HomePage- go the homepage of pizzaria
 </br>
-ourCatalog- go to the catalog page 
+OurCatalog- go to the catalog page 
 </br>
 Stores- go to stors page 
 </br>
-Myorders-see the orders that done 
+My Orders-see the orders that done 
 </br>
-My cart - see your cart 
+My Cart - see your cart 
 </br>
 <strong>How to do an order</strong>
 </br>
